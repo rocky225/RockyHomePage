@@ -1,0 +1,90 @@
+<!doctype html>
+<html ng-app="mainApp">
+	<head>
+		<title>
+			Rocky's Home Page
+		</title>
+		<link href="../css/quake.slider.css" rel="stylesheet" type="text/css" />
+		<link href="../skins/dark-room/quake.skin.css" rel="stylesheet" type="text/css" />
+		
+		<link href="../css/zzsc.css" rel="stylesheet">
+		<link href="../css/maps.css" rel="stylesheet">
+		
+		<script src="../js/quake-slider/jquery.min.js" type="text/javascript"></script>
+		<script src="../js/quake-slider/quake.slider-min.js" type="text/javascript"></script>
+		
+		<script type="text/javascript" src="Test.js"></script>
+	</head>
+	<body>
+	
+	
+		<div style="width: 950px;margin: 0 auto;">
+			<ul class="venus-menu">
+				<li class="lionchange active" onclick="archive(this)">
+					<a href="#/"><i class="icon-home"></i>Home</a>
+				</li>
+				<li class="lionchange" onclick="showImage()"><a href="#/album"><i class="icon-magic"></i>Album</a></li>
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-thumbs-up"></i>Services</a>
+					<ul>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Hosting</a></li>
+						<li><a href="#">Consulting</a></li>					
+					</ul>
+				
+				</li>
+				
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-quote-right"></i>Blog</a></li>
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-envelope-alt"></i>Contact</a></li>
+				<li class="search">
+					<form method="get">
+						<input type="text" name="search" class="search" placeholder="Search" />
+					</form>
+				</li>
+				
+			</ul>
+		</div>
+			<center onload="loadImage()">
+    <!-- Quake Image Slider -->
+    <div class="quake-slider">
+        <div class="quake-slider-images">
+            <a target="_blank" href="javascript:">
+                <img src="images/nature/1.jpg" alt="" />
+            </a>
+			<a target="_blank" href="javascript:">
+                <img src="images/nature/2.jpg" alt="" />
+			</a> 
+			<a target="_blank" href="javascript:">
+                <img src="images/nature/3.jpg" alt="" />
+            </a>
+			<a target="_blank" href="javascript:">
+                <img src="images/nature/4.jpg" alt="" />
+            </a>
+			<a target="_blank" href="javascript:">
+                <img src="images/nature/5.jpg" alt="" />
+            </a>
+        </div>
+        <div class="quake-slider-captions">
+            <div class="quake-slider-caption">
+                This is a caption. You can put HTML here.11
+            </div>
+            <div class="quake-slider-caption">
+                This is a caption. You can put HTML here.22
+            </div>
+            <div class="quake-slider-caption">
+                This is a caption. You can put HTML here.33
+            </div>
+            <div class="quake-slider-caption">
+                This is a caption. You can put HTML here.44
+            </div>
+            <div class="quake-slider-caption">
+                This is a caption. You can put HTML here.55
+            </div>
+        </div>
+    </div>
+    <!-- /Quake Image Slider -->
+</center>	
+
+
+			@copyright ROCKY
+	</body>
+</html>	

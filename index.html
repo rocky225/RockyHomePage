@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="mainApp">
+	<head>
+		<title>
+			Rocky's Home Page
+		</title>
+		<link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
+		<link href="skins/dark-room/quake.skin.css" rel="stylesheet" type="text/css" />
+		
+		<link href="css/zzsc.css" rel="stylesheet">
+		<link href="css/maps.css" rel="stylesheet">
+		
+		<script type="text/javascript" src="js/angular-1.0.8/angular.js"></script>
+		
+		<link rel="stylesheet" href="css/reset.css" media="screen" />
+		<link rel="stylesheet" href="css/style.css" media="screen" />
+		<link rel="stylesheet" href="css/css3_3d.css" media="screen" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/modernizr.js"></script>
+		
+		<script type="text/javascript" src="homepage.js"></script>
+	</head>
+	<body>
+		<div style="width: 950px;margin: 0 auto;">
+			<ul class="venus-menu">
+				<li class="lionchange active" onclick="archive(this)">
+					<a href="#/"><i class="icon-home"></i>Home</a>
+				</li>
+				<li class="lionchange" onclick="archive(this)"><a href="#/album"><i class="icon-magic"></i>Album</a></li>
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-thumbs-up"></i>Services</a>
+					<ul>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Hosting</a></li>
+						<li><a href="#">Consulting</a></li>					
+					</ul>
+				
+				</li>
+				
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-quote-right"></i>Blog</a></li>
+				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-envelope-alt"></i>Contact</a></li>
+				<li class="search">
+					<form method="get">
+						<input type="text" name="search" class="search" placeholder="Search" />
+					</form>
+				</li>
+				
+			</ul>
+			
+			<div ng-view>
+			</div>
+			<div style="position: fixed;bottom: 8px;">
+			@copyright ROCKY
+			<div>
+		</div>
+	</body>
+</html>	

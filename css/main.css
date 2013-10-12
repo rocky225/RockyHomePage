@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 13px "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	color: #666;
+}
+
+.main_window {
+	margin:0 auto;
+	width:960px;	
+}
+
+.context_window {
+	margin:100px auto;
+	width:960px;
+	border:solid 1px black;
+}
+
+.userMessage_window {
+	margin:0 auto;
+	width:200px;
+	border:solid 1px red;
+	overflow: hidden;
+	position:absolute;
+}
+
+.message_window {
+	width:760px;
+	border:solid 1px blue;
+	overflow: hidden;
+	position: absolute;
+	margin-left:200px;
+}
