@@ -3,12 +3,7 @@
 	<head>
 		<title>
 			Rocky's Home Page
-		</title>
-		<link href="css/quake.slider.css" rel="stylesheet" type="text/css" />
-		<link href="skins/dark-room/quake.skin.css" rel="stylesheet" type="text/css" />
-		
-		<link href="css/zzsc.css" rel="stylesheet">
-		<link href="css/maps.css" rel="stylesheet">
+		</title>		
 		
 		<script type="text/javascript" src="js/angular-1.0.8/angular.js"></script>
 		
@@ -17,17 +12,25 @@
 		<link rel="stylesheet" href="css/css3_3d.css" media="screen" />
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
-		
+
 		<script type="text/javascript" src="homepage.js"></script>
+		
+		<!-- start head title js & css -->
+		<link href="css/zzsc.css" rel="stylesheet">
+		<link href="css/maps.css" rel="stylesheet">
+		<script type="text/javascript" src="js/head/maps.js"></script>
+		<script type="text/javascript" src="js/head/google.js"></script>
+		<!-- end head title js & css -->
+
 	</head>
 	<body>
 		<div style="width: 950px;margin: 0 auto;">
-			<ul class="venus-menu">
-				<li class="lionchange active" onclick="archive(this)">
+			<ul class="venus-menu" style="margin-bottom: 25px;">
+				<li class="lionchange home_head">
 					<a href="#/"><i class="icon-home"></i>Home</a>
 				</li>
-				<li class="lionchange" onclick="archive(this)"><a href="#/album"><i class="icon-magic"></i>Album</a></li>
-				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-thumbs-up"></i>Services</a>
+				<li class="lionchange album_head"><a href="#/album"><i class="icon-magic"></i>Album</a></li>
+				<li class="lionchange"><a href="#"><i class="icon-thumbs-up"></i>Services</a>
 					<ul>
 						<li><a href="#">Web Design</a></li>
 						<li><a href="#">Hosting</a></li>
@@ -36,8 +39,8 @@
 				
 				</li>
 				
-				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-quote-right"></i>Blog</a></li>
-				<li class="lionchange" onclick="archive(this)"><a href="#"><i class="icon-envelope-alt"></i>Contact</a></li>
+				<li class="lionchange"><a href="#"><i class="icon-quote-right"></i>Blog</a></li>
+				<li class="lionchange"><a href="#"><i class="icon-envelope-alt"></i>Contact</a></li>
 				<li class="search">
 					<form method="get">
 						<input type="text" name="search" class="search" placeholder="Search" />
