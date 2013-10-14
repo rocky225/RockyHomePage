@@ -5,7 +5,7 @@ var album_source = [{name:'Lanterns',src:'images/lanterns.jpg'},{name:'Tree',src
 			{name:'Silver Statue',src:'images/statue2.jpg'}];
 
 $(function(){
-//	jQuery().maps();
+	jQuery().maps();
 });			
 			
 angular.module("mainApp",[]).
