@@ -5,7 +5,7 @@ var album_source = [{name:'Lanterns',src:'images/lanterns.jpg'},{name:'Tree',src
 			{name:'Silver Statue',src:'images/statue2.jpg'}];
 
 $(function(){
-	$().maps();
+//	jQuery().maps();
 });			
 			
 angular.module("mainApp",[]).
@@ -24,6 +24,11 @@ var load_album_page = function($scope, Projects) {
 
 var load_home_page = function() {
 	archive("home_head");
+	// Camera 
+	jQuery('.camera_wrap').camera({
+		height: '350px',
+		thumbnails: true
+	});
 }
 
 var archive = function(id){
