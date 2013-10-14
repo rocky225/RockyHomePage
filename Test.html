@@ -4,37 +4,41 @@
 		<title>
 			Rocky's Home Page
 		</title>	
-		<link href="css/zzsc.css" rel="stylesheet">
-		<link href="css/maps.css" rel="stylesheet">
+		
+		<link href="css/MetroJs.min.css" rel="stylesheet">
 
+		<link href="Test.css" rel="stylesheet">
+
+		<script type='text/javascript' src='js/jquery-2.0.3.js'></script>
+	
+		<script type='text/javascript' src='js/MetroJs.min.js'></script> 
+	
+		<script src="Test.js"></script>
+		
 	</head>
 	<body>
-	
-	
-		<div style="width: 950px;margin: 0 auto;">
-			<ul class="venus-menu">
-				<li class="active">
-					<a href="#/"><i class="icon-home"></i>Home</a>
-				</li>
-				<li><a href="#/album"><i class="icon-magic"></i>Album</a></li>
-				<li><a href="#"><i class="icon-thumbs-up"></i>Services</a>
-					<ul>
-						<li><a href="#">Web Design</a></li>
-						<li><a href="#">Hosting</a></li>
-						<li><a href="#">Consulting</a></li>					
-					</ul>
-				
-				</li>
-				
-				<li><a href="#"><i class="icon-quote-right"></i>Blog</a></li>
-				<li><a href="#"><i class="icon-envelope-alt"></i>Contact</a></li>
-				<li class="search">
-					<form method="get">
-						<input type="text" name="search" class="search" placeholder="Search" />
-					</form>
-				</li>
-				
-			</ul>
+<!--
+		<div class="camera_wrap">
+			<div data-src="images/cablecar.jpg"></div>
+			<div data-src="images/londoneye.jpg"></div>
+			<div data-src="images/lanterns.jpg"></div>
+		</div>
+		-->
+		<div class="live-tile" data-speed="750" data-delay="3000">
+			<span class="tile-title">slide tile</span>
+			<div><img class="full" src="images/cablecar.jpg" alt="1" /></div>
+			<div><img class="full" src="images/londoneye.jpg" alt="2" /></div>
+		</div>
+		
+		<div class="red live-tile" data-mode="flip" data-delay="4000">            
+			<div>
+				<img class="full" src="images/cablecar.jpg" alt="3" />
+				<span class="tile-title">flip tile front</span>
+			</div>
+			<div>
+				<img class="full" src="images/londoneye.jpg" alt="4" />
+				<span class="tile-title">flip tile back</span>
+			</div>
 		</div>
 
 			@copyright ROCKY
