@@ -1,0 +1,19 @@
+.home_div_list{
+	width:250px;
+	margin-right:10px;
+	float: left;
+}
+
+.home_div {
+	width: 100%;
+	margin-bottom: 10px;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	background-color:#fff;
+}
+
+.home_div:hover{
+	box-shadow: 5px 5px 5px #888888;
+}
