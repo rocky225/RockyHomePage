@@ -7,7 +7,21 @@ jQuery(function() {
 	jQuery('.camera_wrap').camera({
 				thumbnails: true
 			});
-			*/
+	*/
+	$("#device").gridalicious({
+                    gutter: 10,
+                    width: 250,
+                    animate: true,
+                    animationOptions: {
+                            speed: 150,
+                            duration: 500,
+                            complete: function(data) {
+                    
+							}
+                    },
+                });
+				
+//	 $("#device").gridalicious('resize');
 });
 
 

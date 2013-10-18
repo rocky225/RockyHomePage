@@ -22,27 +22,20 @@ var load_album_page = function($scope, Projects) {
 	archive("album_head");
 }
 
-var home_page_divs = new Array();
 var load_home_page = function() {
-	var div_w = 260;
 	archive("home_head");
-	var home = $("#main_home_div");
-	var width = home.width();
-	var num_x = Math.floor(width/div_w);
-	home.width(num_x * div_w);
-	for(var i = 0;i<num_x;i++){
-		home.append("<div class='home_div_list'></div>");
-	}
-	home_page_divs = home[0].children;
-	for(var i=0;i<30;i++){
-		var r = Math.floor(Math.random()*255);
-		var g = Math.floor(Math.random()*255);
-		var b = Math.floor(Math.random()*255);
-		var h = 300 + Math.floor(Math.random()* 100);
-		var index = i % num_x;
-		$(home_page_divs[index]).append("<div class='home_div' style='height:" + h + "px;'><div>");
-//		home.append("<div class='home_div_list'></div>");
-	}
+	$("#main_home_div").gridalicious({
+                    gutter: 10,
+                    width: 250,
+                    animate: true,
+                    animationOptions: {
+                            speed: 150,
+                            duration: 500,
+                            complete: function(data) {
+                    
+							}
+                    },
+                });
 }
 
 var archive = function(id){
