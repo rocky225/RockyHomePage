@@ -5,10 +5,11 @@
 		border-radius: 10px;
 		font-family: Arial;
 	}
-	
+/*	
 .item:hover{
 	box-shadow: 5px 5px 5px rgba(20, 150, 230, 0.5);
 }
+*/
 .item img{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;

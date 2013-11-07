@@ -11,20 +11,107 @@ This is Home Page.
 -->
 
 <div style="margin: auto;width: 100%;" id="main_home_div">
+    <!-- Start Angularjs      -->
+    <div class="item" ng-repeat="home in homes">
+        <div class="box" style="width:300px;">
+            <div class="he-wrap tpl4" style="width:100%;">
+                <img ng-src="{{home.src}}" alt="{{home.alt}}" />
+                <div class="he-view">
+                    <div class="bg">
+                        <div class="{{bg.class}}" data-animate="{{bg.animate}}" ng-repeat="bg in home.bgs"></div>
+                    </div>
+                    <div class="content">
+                        <h3 class="{{home.titleClass}}" data-animate="{{home.titleAnimate}}">{{home.title}}</h3>
+                        <div class="{{home.detailClass}}" data-animate="{{home.detailAnimate}}">{{home.detail}}</div>
+                        <a href="#" class="{{home.buttonClass}}" data-animate="{{home.buttonAnimate}}">{{home.button}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Angularjs -->
+    <!--
 	<div class="item">
-		<img src="images/metro_/InternetExplorer128.png"></img>
+        <div class="box" style="width:300px;">
+            <div class="he-wrap tpl4" style="width:100%">
+                <img src="images/metro_/3.jpg" alt="" />
+                <div class="he-view">
+                    <div class="bg">
+                        <div class="a0" data-animate="fadeInDown"></div>
+                        <div class="a0" data-animate="fadeInUp"></div>
+                        <div class="a0" data-animate="fadeInDown"></div>
+                        <div class="a0" data-animate="fadeInUp"></div>
+                        <div class="a0" data-animate="fadeInDown"></div>
+                    </div>
+                    <div class="content">
+                        <h3 class="info-title a2" data-animate="fadeInDown">HoverEx - jQuery Plugin</h3>
+                        <div class="detail a2" data-animate="fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</div>
+                        <a href="#" class="more a2" data-animate="fadeInRight">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	-->
+    <!--
+    <div class="item">
+        <div class="box" style="width:300px;">
+            <div class="he-wrap tpl4" style="width:100%;">
+                <img src="images/metro_/3.jpg" alt="" />
+                <div class="he-view">
+                    <div class="bg">
+                        <div class="a0" data-animate="fadeInDown"></div><div class="a0" data-animate="fadeInUp"></div><div class="a0" data-animate="fadeInDown"></div><div class="a0" data-animate="fadeInUp"></div><div class="a0" data-animate="fadeInDown"></div>
+                    </div>
+                    <div class="content">
+                        <h3 class="info-title a2" data-animate="fadeInDown">HoverEx - jQuery Plugin</h3>
+                        <div class="detail a2" data-animate="fadeInUp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</div>
+                        <a href="#" class="more a2" data-animate="fadeInRight">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="item">
+        <div class="box" style="width:300px">
+            <div class="he-wrap tpl4">
+                <img src="images/metro_/1.jpg" alt="" />
+                <div class="he-view">
+                    <div class="bg">
+                        <div class="a0" data-animate="fadeIn"></div><div class="a1" data-animate="fadeIn"></div><div class="a2" data-animate="fadeIn"></div><div class="a3" data-animate="fadeIn"></div><div class="a4" data-animate="fadeIn"></div>
+                    </div>
+                    <div class="content">
+                        <h3 class="info-title a3" data-animate="rotateInLeft">HoverEx - jQuery Plugin</h3>
+                        <div class="detail a4" data-animate="rotateInLeft">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</div>
+                        <a href="#" class="more a5" data-animate="fadeInUp">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <div class="item">
+        <div class="box" >
+            <div class="he-wrap tpl4" style="width:300px">
+                <img src="images/metro_/4.jpg" alt="" />
+                <div class="he-view">
+                    <div class="bg">
+                        <div class="a0" data-animate="fadeInUp"></div><div class="a1" data-animate="fadeInUp"></div><div class="a2" data-animate="fadeInUp"></div><div class="a3" data-animate="fadeInUp"></div><div class="a4" data-animate="fadeInUp"></div>
+                    </div>
+                    <div class="content">
+                        <h3 class="info-title a3" data-animate="fadeInLeft">HoverEx - jQuery Plugin</h3>
+                        <div class="detail a4" data-animate="fadeInRight">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</div>
+                        <a href="#" class="more a5" data-animate="fadeInRight">View Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="item">
+		<img src="images/metro_/2.jpg"/>
 		<div>Lorem ipsum dolor sit amet, consectetur.</div>
 	</div>
 	<div class="item">
-		<img src="images/metro_/1.jpg"></img>
-		<div>Lorem ipsum dolor sit amet, consectetur.</div>
-	</div>
-	<div class="item">
-		<img src="images/metro_/2.jpg"></img>
-		<div>Lorem ipsum dolor sit amet, consectetur.</div>
-	</div>
-	<div class="item">
-		<img src="images/metro_/3.jpg"></img>
+		<img src="images/metro_/3.jpg"/>
 		<div>Lorem ipsum dolor sit amet, consectetur.</div>
 	</div>	
 	<div class="item">
@@ -58,5 +145,6 @@ This is Home Page.
 	<div class="item">
 		<img src="images/metro_/Calendar128.png"></img>
 		<div>Lorem ipsum dolor sit amet, consectetur.</div>
-	</div>	
+	</div>
+	-->
 </div>
